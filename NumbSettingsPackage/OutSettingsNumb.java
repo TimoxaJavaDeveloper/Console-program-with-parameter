@@ -3,13 +3,50 @@ package com.Profile.NumbSettingsPackage;
 public class OutSettingsNumb extends Operator {
 
     public String getString;
+    private int col;
     public boolean BullNumb;
+    private String nameAndFamaling;
 
     //Приветствие, конструктор
     public OutSettingsNumb(String nameAndFamiling) {
-        System.out.print("\n\n" + "        ######" + " Hi " + nameAndFamiling + "! " + "######\n" +
-                         "############## REGISTRITY ##############\n");
+        this.nameAndFamaling = nameAndFamiling;
+        col = nameAndFamiling.length();
+        SettingsStringHello();
+        System.out.print("############## REGISTRITY ##############\n");
     }
+
+    private void SettingsStringHello() {
+
+        switch (col) {
+            case 1: {
+                System.out.println("\n\n" + "           ######" + " Hi " + nameAndFamaling + "! " + "######");
+            }break;
+
+            case 2: {
+                System.out.println("\n\n" + "          ######" + "  Hi " + nameAndFamaling + "!  " + "######");
+            }break;
+
+            case 3: {
+                System.out.println("\n\n" + "         ######" + "  Hi " + nameAndFamaling + "!  " + "######");
+            }break;
+
+            case 4: {
+                System.out.println("\n\n" + "        ######" + "  Hi " + nameAndFamaling + "!  " + "######");
+            }break;
+
+            case 5: {
+                System.out.println("\n\n" + "         ######" + " Hi " + nameAndFamaling + "! " + "######");
+            }break;
+
+            case 6: {
+                System.out.println("\n\n" + "        ######" + " Hi " + nameAndFamaling + "! " + "######");
+            }
+
+            case 7: {
+                System.out.println("\n\n" + "       ######" + "  Hi " + nameAndFamaling + "! " + "######");
+            }
+            }
+        }
 
     //Метод проверки страны т.е. код номера
 
