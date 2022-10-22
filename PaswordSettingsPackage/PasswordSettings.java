@@ -13,7 +13,7 @@ public class PasswordSettings extends Profile {
     public void GetPasword(){
         Scanner scanPas = new Scanner(System.in);
 
-        System.out.print("# Write password(Your password must be at least 8 characters): ");
+        System.out.print("# Write password(Your password must be at least 9 characters): ");
         password = scanPas.nextLine();
         ProverkaPasswords();
     }
@@ -22,7 +22,7 @@ public class PasswordSettings extends Profile {
         if(password.length() > 8){
             FinalProverka();
         }else{
-            System.out.println("Password less than 8 characters");
+            System.out.println("Password less than 9 characters");
             GetPasword();
         }
     }
