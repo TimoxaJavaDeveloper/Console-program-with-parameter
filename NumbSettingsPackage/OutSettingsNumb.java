@@ -18,33 +18,37 @@ public class OutSettingsNumb extends Operator {
     private void SettingsStringHello() {
 
         switch (col) {
-            case 1: {
+            case 1:
                 System.out.println("\n\n" + "           ######" + " Hi " + nameAndFamaling + "! " + "######");
-            }break;
+            break;
 
-            case 2: {
+            case 2:
                 System.out.println("\n\n" + "          ######" + "  Hi " + nameAndFamaling + "!  " + "######");
-            }break;
+            break;
 
-            case 3: {
+            case 3:
                 System.out.println("\n\n" + "         ######" + "  Hi " + nameAndFamaling + "!  " + "######");
-            }break;
+            break;
 
-            case 4: {
+            case 4:
                 System.out.println("\n\n" + "        ######" + "  Hi " + nameAndFamaling + "!  " + "######");
-            }break;
+            break;
 
-            case 5: {
+            case 5:
                 System.out.println("\n\n" + "         ######" + " Hi " + nameAndFamaling + "! " + "######");
-            }break;
+            break;
 
-            case 6: {
+            case 6:
                 System.out.println("\n\n" + "        ######" + " Hi " + nameAndFamaling + "! " + "######");
-            }
+            break;
 
-            case 7: {
+            case 7:
                 System.out.println("\n\n" + "       ######" + "  Hi " + nameAndFamaling + "! " + "######");
-            }
+                break;
+
+            default:
+                System.out.println("\n\n" + "        ######" + " Hi " + nameAndFamaling + "! " + "######");
+                break;
             }
         }
 
